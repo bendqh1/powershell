@@ -25,5 +25,5 @@ dir
 ## Run a script
 
 ```
-./FILENAME.ps1
+.\FILENAME.ps1
 ```
