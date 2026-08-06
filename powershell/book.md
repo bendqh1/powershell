@@ -27,3 +27,9 @@ dir
 ```
 .\FILENAME.ps1
 ```
+
+## Running script is disabled on that system
+
+```
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
