@@ -1,15 +1,19 @@
+Create a script that constantly reminds to do an action in a certain context with two or more text to speech sentence reminders, said repeatedly on a time interval.
+
+## AI Question
+
 PC with Windows 11 Home.
 
 Create for me a Windows 11 PowerShell script that randomly says out loud (text to speech) one of the following sentences every two minutes.
 
 This should happen from the moment that the script was initiated to the moment that the script was terminated.
 
-## Notes
+### Notes
 
 * The speech slow should be as slow as possible.
 * The maximum runtime of the script should be 60 minutes.
 
-## Sentences
+### Sentences
 
 ```
 (
