@@ -1,5 +1,11 @@
 ## Commands
 
+### Check PowerShell version
+
+```
+$PSVersionTable
+```
+
 ### Find Desktop
 
 ```
