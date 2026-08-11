@@ -9,15 +9,27 @@ IF IT'S NOT A PROBLEM --- close the current PowerShell process and start a new o
 Then, for example, temporarily download a script, run it, and delete it (tempdownrundel).
 
 ```powershell
+# Remember the folder you started in.
+$originalLocation = Get-Location
+
+# Create a unique temporary location for the repository.
 $tempRepoPath = "$env:TEMP\apc-$([guid]::NewGuid())"
 
 try {
+    # Download the repository.
     git clone --depth 1 https://github.com/bendqh1/apc $tempRepoPath
+
+    # Enter the temporary repository.
     Push-Location $tempRepoPath
+
+    # Run the script from the repository.
     & .\main.ps1
 }
 finally {
-    Pop-Location -ErrorAction SilentlyContinue
+    # Return to the folder you were originally in.
+    Set-Location $originalLocation
+
+    # Delete the temporary repository.
     Remove-Item $tempRepoPath -Recurse -Force -ErrorAction SilentlyContinue
 }
 ```
