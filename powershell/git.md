@@ -1,4 +1,14 @@
-Run:
+## Run a GitHub script locally (finalized script only)
+
+```
+irm https://raw.githubusercontent.com/USER/REPO/refs/heads/main/MAIN.ps1 | iex
+```
+
+This won't work if the script has any subfolder.
+
+## Install Git on Windows
+
+Installing Git on Windows can be done from PowerShell, is well established and quite safe for running simple scripts.
 
 ```powershell
 winget install --id Git.Git -e --source winget
@@ -6,7 +16,7 @@ git --version
 IF IT'S NOT A PROBLEM --- close the current PowerShell process and start a new one, so that Git would be loaded
 ```
 
-Then, for example, temporarily download a script, run it, and delete it (tempdownrundel).
+## Temporarily download a script, run it, and delete it (tempdownrundel) with Git
 
 ```powershell
 # Remember where you started.
