@@ -19,5 +19,6 @@ finally {
     Pop-Location -ErrorAction SilentlyContinue
     Remove-Item $dir -Recurse -Force -ErrorAction SilentlyContinue
 }
+```
 
 > `--depth 1` makes it a shallow clone, so Git downloads only the current state rather than the repository's entire history.
