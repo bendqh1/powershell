@@ -7,7 +7,7 @@ git --version
 
 Then, for example, temporarily download a script, run it, and delete it (tempdownrundel).
 
-```
+```powershell
 $dir = "$env:TEMP\apc-$([guid]::NewGuid())"
 
 try {
