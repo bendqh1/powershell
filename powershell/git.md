@@ -15,4 +15,5 @@ irm https://raw.githubusercontent.com/USER/REPO/refs/heads/main/MAIN.ps1 | iex
 ```
 
 That will work only for finalized scripts; it won't work if the script has any subfolder.<br>
-In case of subfolders, there is a need of a launcher, [such as this launcher](https://github.com/bendqh1/cloud_apc/blob/main/git_launcher.md).
+In case of subfolders, there is a need of a launcher script.<br>
+I recommend putting the launcher script in the same repository of the project to launch.
