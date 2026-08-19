@@ -44,8 +44,10 @@ schtasks /Create /TN "HaircutReminder_72h" /SC HOURLY /MO 72 /F ^
 
 ## Stopping the tasks
 
+```powershell
 schtasks /Delete /TN "HaircutReminder_Logon" /F
 schtasks /Delete /TN "HaircutReminder_72h" /F
+```
 
 ## Notes
 
